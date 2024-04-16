@@ -86,7 +86,7 @@ function toRow(file, indent, options) {
 			td(percentage(file.branches, options)),
 			td(percentage(file.functions, options)),
 			td(percentage(file.lines, options)),
-			td(uncovered(file, options)),
+			td(uncovered(file, options)).style("max-width", "30%"),
 		);
 	}
 }
